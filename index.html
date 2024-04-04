@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+  </head>
+  <body class="bg-blue-950">
+    <header class="text-4xl text-white text-center p-5">
+      Todo List App
+    </header>
+    <main class="p-10">
+      <div class="max-w-4xl bg-white p-5 rounded mx-auto">
+        <!-- add list -->
+        <div class="flex gap-x-3">
+          <input type="text" 
+          id="list_input"
+          class="px-5 py-3 border border-black outline-none rounded w-full"
+          placeholder="Enter the task">
+          <button id="add" class="px-6 py-2 bg-blue-500 text-white font-medium hover:bg-blue-600 rounded">Add</button>
+        </div>
+
+
+        <!-- list -->
+        <div class="p-5 mt-5 select-none" id="todoList">
+          <div class="px-5 py-3 bg-blue-200 rounded text-xl flex">
+            <label for="excercise" class="flex flex-1 items-center space-x-3">
+              <input type="checkbox" class="accent-blue-500 w-5 h-4" name="excercise" id="excercise">
+              <p>Excercise</p>
+            </label>
+             <button class="px-4 py-2 bg-red-400 rounded text-white">
+              delete
+             </button>
+          </div>
+      </div>
+      </div>
+   
+    </main>
+    
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
